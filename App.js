@@ -1,6 +1,6 @@
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 import { useFonts } from 'expo-font';
-import Navigator from './routes/homeStack';
+import AppNavigator from './routes/drawer';
 
 export default function App() {
   const [loaded] = useFonts({
@@ -13,6 +13,6 @@ export default function App() {
   }
 
   return (
-    Navigator()
+    <AppNavigator />
   );
 }
